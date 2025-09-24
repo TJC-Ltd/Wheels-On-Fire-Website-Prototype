@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MyCarSite — Layout</title>
+  <style>
+    :root{
+      --box-bg: #fff;
+      --box-border: #ddd;
+      --accent: #0b66c3;
+      --text: #111;
+      --card-radius: 10px;
+    }
+
+    html,body{
+      height:100%;
+      margin:0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:#f3f4f6;
+      color:var(--text);
+    }
+
+    .page {
+      max-width:1100px;
+      margin:28px auto;
+      padding:0 16px 40px;
+      display:grid;
+      grid-template-rows: auto auto auto 1fr;
+      gap:12px;
+    }
+
+    .box {
+      background:var(--box-bg);
+      border:1px solid var(--box-border);
+      border-radius:var(--card-radius);
+      padding:12px;
+      box-shadow:0 1px 2px rgba(0,0,0,0.04);
+    }
+
+    /* Header with left and right logos and centered brand */
+    .brand-row {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+
+    .brand-side {
+      display:flex;
+      align-items:center;
+      gap:10px;
+      width:72px;
+      justify-content:center;
+    }
+
+    .brand-side img{
+      width:48px;
+      height:48px;
+      object-fit:cover;
+      border-radius:6px;
+      background:#eee;
+      border:1px solid #e1e1e1;
+    }
+
+    .brand-title {
+      flex:1 1 auto;
+      text-align:center;
+      font-size:1.35rem;
+      font-weight:700;
+      color:var(--accent);
+    }
+
+    .nav-row {
+      display:flex;
+      align-items:stretch;
+      padding:0;
+      border-radius:var(--card-radius);
+      overflow:hidden;
+      gap:0;
+    }
+
+    .nav-item {
+      flex:1 1 auto;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      text-decoration:none;
+      color:var(--text);
+      padding:12px 10px;
+      border-left:1px solid rgba(0,0,0,0.04);
+      background:linear-gradient(180deg,#fff,#fbfbfb);
+      font-weight:600;
+    }
+
+    .nav-item:first-child { border-left: none; }
+
+    /* --- Body Part 1: Hero with background car image and "Home" label --- */
+    .hero {
+      position:relative;
+      height:420px;
+      border-radius:var(--card-radius);
+      overflow:hidden;
+      padding:0;
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:flex-start;
+    }
+
+    /* overlay to slightly darken background for readable text */
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0.12));
+      pointer-events:none;
+    }
+
+    .hero-label {
+      position:relative; /* above overlay */
+      margin:16px;
+      padding:8px 12px;
+      background:rgba(255,255,255,0.85);
+      border-radius:6px;
+      font-weight:700;
+      color:var(--accent);
+      border:1px solid rgba(0,0,0,0.06);
+      box-shadow:0 1px 2px rgba(0,0,0,0.04);
+    }
+
+    /* --- Body Part 2: Gallery with three horizontal images --- */
+    .gallery {
+      display:flex;
+      gap:0; /* no gaps between the image cards as requested */
+      border-radius:var(--card-radius);
+      overflow:hidden;
+      margin-top:0;
+    }
+
+    .gallery .card {
+      flex:1 1 0;
+      min-height:160px;
+      background-size:cover;
+      background-position:center;
+      position:relative;
+      display:flex;
+      align-items:flex-end;
+      padding:10px;
+      color:#fff;
+      font-weight:700;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    }
+
+    .gallery .card .caption {
+      background:rgba(0,0,0,0.45);
+      padding:6px 8px;
+      border-radius:6px;
+      margin:8px;
+      font-size:0.95rem;
+    }
+
+    /* --- Footer: contact boxes on a horizontal line --- */
+    .footer-row {
+      display:flex;
+      gap:12px;
+      align-items:stretch;
+      margin-top:8px;
+    }
+
+    .contact-box {
+      flex:1 1 0;
+      display:flex;
+      gap:12px;
+      align-items:center;
+      padding:14px;
+      border-radius:8px;
+      background:linear-gradient(180deg,#fff,#fbfbfb);
+      border:1px solid var(--box-border);
+    }
+
+    .contact-icon {
+      width:44px;
+      height:44px;
+      border-radius:8px;
+      display:inline-grid;
+      place-items:center;
+      font-weight:700;
+      background:#f4f6f8;
+      border:1px solid #e8e8e8;
+      color:var(--accent);
+    }
+
+    .contact-info {
+      display:flex;
+      flex-direction:column;
+      gap:3px;
+      font-size:0.95rem;
+    }
+
+    .contact-info .label { font-weight:700; color:#333; }
+    .contact-info .value { color:#555; font-size:0.9rem; }
+
+    /* Responsive adjustments */
+    @media (max-width:900px){
+      .hero { height:320px; }
+      .gallery .card { min-height:120px; }
+      .footer-row { flex-direction:column; }
+    }
+
+    @media (max-width:600px){
+      .brand-side { width:56px; }
+      .brand-side img { width:40px; height:40px; }
+      .brand-title { font-size:1.1rem; padding:0 8px; }
+      .nav-row { flex-direction:column; }
+      .nav-item { justify-content:flex-start; padding:10px; border-left:none; border-top:1px solid rgba(0,0,0,0.04); }
+      .nav-item:first-child { border-top:none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- Header -->
+    <header class="box brand-row" aria-label="Brand header">
+      <div class="brand-side">
+        <img src="https://via.placeholder.com/48x48?text=L1" alt="Left logo">
+      </div>
+
+      <div class="brand-title">Wheels On Fire</div>
+
+      <div class="brand-side">
+        <img src="https://via.placeholder.com/48x48?text=L2" alt="Right logo">
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="box nav-row" aria-label="Main navigation">
+      <a class="nav-item" href="index.html">Home</a>
+      <a class="nav-item" href="about.html">About</a>
+      <a class="nav-item" href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Body Part 1: Hero with large car background and Home label top-left -->
+    <section class="box hero" style="background-image: url('bigcarimage.jpeg');" aria-label="Hero">
+      <div class="hero-label">Home</div>
+    </section>
+
+    <!-- Body Part 2: Gallery with 3 horizontal images -->
+    <section class="box gallery" aria-label="Gallery">
+      <div class="card" style="background-image: url('carimg1.jpeg');">
+        <div class="caption">Car 1</div>
+      </div>
+      <div class="card" style="background-image: url('carimg2.jpeg');">
+        <div class="caption">Car 2</div>
+      </div>
+      <div class="card" style="background-image: url('carimg3.jpeg');">
+        <div class="caption">Car 3</div>
+      </div>
+    </section>
+
+    <!-- Footer: contact details in boxes on a horizontal line with social + phone + email -->
+    <footer class="box footer-row" aria-label="Footer contacts">
+      <div class="contact-box" aria-label="Instagram">
+        <div class="contact-icon">IG</div>
+        <div class="contact-info">
+          <div class="label">Instagram</div>
+          <div class="value">@mycarsite</div>
+        </div>
+      </div>
+
+      <div class="contact-box" aria-label="Facebook">
+        <div class="contact-icon">FB</div>
+        <div class="contact-info">
+          <div class="label">Facebook</div>
+          <div class="value">facebook.com/mycarsite</div>
+        </div>
+      </div>
+
+      <div class="contact-box" aria-label="Phone">
+        <div class="contact-icon">📞</div>
+        <div class="contact-info">
+          <div class="label">Phone</div>
+          <div class="value">+353 1 234 5678</div>
+        </div>
+      </div>
+
+      <div class="contact-box" aria-label="Email">
+        <div class="contact-icon">✉️</div>
+        <div class="contact-info">
+          <div class="label">Email</div>
+          <div class="value">info@mycarsite.example</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
