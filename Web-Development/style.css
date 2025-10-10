@@ -1,0 +1,85 @@
+.navbar ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background: #003366;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  color:  #f1f1e6;
+
+}
+
+.banner {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.navbar li {
+  float: left;
+}
+
+li a:hover {
+  background-color: #002244;
+}
+
+header {
+  text-align: center;
+  padding: 10px;
+}
+
+p {
+  font-family: Impact,'Arial Narrow Bold', sans-serif;
+  color: #333333;
+}
+
+h1 {
+  font-family: Verdana, Tahoma, sans-serif;
+  color: #111111;
+  text-align: center;
+}
+
+h2 {
+  font-family: Verdana, Tahoma, sans-serif;
+  color: #111111;
+}
+
+h3 {
+  font-family: Verdana, Tahoma, sans-serif;
+  color: #111111;
+}
+
+h4 {
+  font-family: Verdana, Tahoma, sans-serif;
+  color: #111111;
+}
+
+h5 {
+  font-family: Verdana, Tahoma, sans-serif;
+  color: #111111;
+}
+
+h6 {
+  font-family: Verdana, Tahoma, sans-serif;
+  color: #111111;
+}
+
+body {
+  background-color: #f1f1e6
+}
+
+form {
+  font-family: Verdana, Tahoma, sans-serif;
+  color:#111111
+}
+
+i {
+  color: #003366;
+}
