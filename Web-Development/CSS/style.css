@@ -41,9 +41,11 @@ p {
 }
 
 h1 {
-  font-family: Verdana, Tahoma, sans-serif;
+  font-family: "Blazed", Tahoma, sans-serif;
   color: #111111;
+  text-shadow: 2px 2px 5px red;
   text-align: center;
+
 }
 
 h2 {
@@ -82,4 +84,9 @@ form {
 
 i {
   color: #003366;
+}
+
+@font-face {
+  font-family: "Blazed"; /* set name */
+  src: url(Web-Development\fonts\Blazed.ttf); /* url of the font */
 }
