@@ -11,8 +11,17 @@
   padding: 15px;
   display: block;
   text-align: center;
-  color:  #f1f1e6;
+  color: #f1f1e6;
 
+}
+
+.picture {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 33%;
+  height: 10%;
+  max-block-size: 300px;
 }
 
 .banner {
@@ -36,7 +45,7 @@ header {
 }
 
 p {
-  font-family: Impact,'Arial Narrow Bold', sans-serif;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
   color: #333333;
 }
 
@@ -79,7 +88,7 @@ body {
 
 form {
   font-family: Verdana, Tahoma, sans-serif;
-  color:#111111
+  color: #111111
 }
 
 i {
@@ -87,6 +96,6 @@ i {
 }
 
 @font-face {
-  font-family: "Blazed"; /* set name */
-  src: url(Web-Development\fonts\Blazed.ttf); /* url of the font */
+  font-family: "Blazed";
+  src: url(Web-Development\fonts\Blazed.ttf);
 }
