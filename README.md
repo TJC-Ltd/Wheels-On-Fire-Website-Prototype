@@ -1,1 +1,1 @@
-This is a website for John O'Reilly of Wheels on Fire LTD. Web development group TJC.
+This is the repository for John O'Reilly of Wheels on Fire LTD and his website. Web development group TJC.
