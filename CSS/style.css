@@ -119,3 +119,11 @@ i {
   height: 90%;
   max-block-size: 500px;
 }
+
+.row{
+  display: flex;
+}
+
+.column{
+  flex: 50%;
+}
