@@ -3,7 +3,8 @@
   margin: 0px;
   padding: 0px;
   overflow: hidden;
-  background: #003366;
+  background: #324b76;
+  background-image: linear-gradient(to right, black, #324b76)
 }
 
 .navbar a {
