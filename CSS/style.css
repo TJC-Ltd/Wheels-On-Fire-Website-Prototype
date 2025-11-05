@@ -128,3 +128,28 @@ i {
 .column{
   flex: 50%;
 }
+
+.event_image{
+  height:50%;
+  width:50%;
+}
+
+.event_txt{
+  margin-right:19rem;
+  margin-left:1rem;
+}
+
+.event_h{
+  margin-left:6rem;
+}
+
+.bottom_img_section{
+  margin-left:10rem;
+  margin-top:6rem;
+  margin-bottom:2rem;
+}
+
+.bottom_img{
+  height:30%;
+  width:30%;
+}
