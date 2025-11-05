@@ -3,8 +3,16 @@
   margin: 0px;
   padding: 0px;
   overflow: hidden;
+<<<<<<< Updated upstream
   background: #324b76;
   background-image: linear-gradient(to right, black, #324b76)
+=======
+  background: #003366;
+  width: 100%;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 }
 
 .navbar a {
@@ -13,6 +21,7 @@
   display: block;
   text-align: center;
   color: #f1f1e6;
+  margin:0px;
 
 }
 
@@ -34,6 +43,7 @@
 
 .navbar li {
   float: left;
+  margin:0px;
 }
 
 li a:hover {
@@ -86,6 +96,8 @@ h6 {
 
 body {
   background-color: #ffffff;
+  padding: 0px;
+  margin: 0;
 }
 
 form {
