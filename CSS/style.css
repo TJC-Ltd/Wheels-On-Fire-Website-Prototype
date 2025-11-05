@@ -98,7 +98,7 @@ i {
 
 @font-face {
   font-family: "Blazed";
-  src: url(fonts\Blazed.ttf);
+  src: url(..\fonts\Blazed.ttf);
 }
 
 .RallyCar {
