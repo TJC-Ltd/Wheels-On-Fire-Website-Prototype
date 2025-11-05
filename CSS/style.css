@@ -51,7 +51,7 @@ header {
 
 p {
   font-family: Impact, 'Arial Narrow Bold', sans-serif;
-  color: #9f9b9b;
+  color: #f1f1e6;
   font-size: 16px;
 }
 
@@ -65,27 +65,27 @@ h1 {
 
 h2 {
   font-family: Verdana, Tahoma, sans-serif;
-  color: #ffffff;
+  color: #f1f1e6;
 }
 
 h3 {
   font-family: Verdana, Tahoma, sans-serif;
-  color: #ffffff;
+  color: #f1f1e6;
 }
 
 h4 {
   font-family: Verdana, Tahoma, sans-serif;
-  color: #ffffff;
+  color: #f1f1e6;
 }
 
 h5 {
   font-family: Verdana, Tahoma, sans-serif;
-  color: #111111;
+  color: #f1f1e6;
 }
 
 h6 {
   font-family: Verdana, Tahoma, sans-serif;
-  color: #111111;
+  color: #f1f1e6;
 }
 
 body {
