@@ -124,6 +124,8 @@ i {
 
 .row{
   display: flex;
+  margin-top:4rem;
+  margin-left:22rem;
 }
 
 .column{
