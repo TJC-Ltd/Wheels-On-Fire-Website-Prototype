@@ -99,3 +99,13 @@ i {
   font-family: "Blazed";
   src: url(Web-Development\fonts\Blazed.ttf);
 }
+
+.RallyCar {
+  text-align: center;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  height: 100%;
+  max-block-size: 500px;
+}
