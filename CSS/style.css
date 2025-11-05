@@ -51,13 +51,13 @@ header {
 
 p {
   font-family: Impact, 'Arial Narrow Bold', sans-serif;
-  color: #333333;
+  color: #9f9b9b;
   font-size: 16px;
 }
 
 h1 {
   font-family: "Blazed", Tahoma, sans-serif;
-  color: #111111;
+  color: #000000;
   text-shadow: 2px 2px 5px red;
   text-align: center;
 
@@ -65,17 +65,17 @@ h1 {
 
 h2 {
   font-family: Verdana, Tahoma, sans-serif;
-  color: #111111;
+  color: #ffffff;
 }
 
 h3 {
   font-family: Verdana, Tahoma, sans-serif;
-  color: #111111;
+  color: #ffffff;
 }
 
 h4 {
   font-family: Verdana, Tahoma, sans-serif;
-  color: #111111;
+  color: #ffffff;
 }
 
 h5 {
@@ -92,6 +92,8 @@ body {
   background-color: #ffffff;
   padding: 0px;
   margin: 0px;
+  background: #324b76;
+  background-image: linear-gradient(to right, black, #324b76);
 }
 
 form {
@@ -113,7 +115,7 @@ i {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  width: 85%;
+  width: 60%;
   height: 100%;
   max-block-size: 500px;
 }
