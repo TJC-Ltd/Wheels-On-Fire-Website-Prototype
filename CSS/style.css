@@ -1,6 +1,9 @@
 .navbar ul {
   list-style-type: none;
   margin: 0px;
+  border:#002244;
+  border-style: solid;
+  border-width: 2px;
   padding: 0px;
   overflow: hidden;
   background: #324b76;
