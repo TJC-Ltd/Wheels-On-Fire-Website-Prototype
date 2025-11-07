@@ -160,3 +160,7 @@ i {
   height:30%;
   width:30%;
 }
+
+.img_box1{
+  display:flex;
+}
