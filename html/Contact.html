@@ -25,7 +25,7 @@
     <p>Email Address: JohnOReilly@wheelsonfire.ie </p>
     <p>Landline: 01 840 8204</p>
 
-    <form>
+    <form id="forminfo">
       <label for="fname">First Name:</label><br>
       <input type="text" id="fname" name="fname" required><br>
       <label for="sname">Surname:</label><br>
@@ -41,11 +41,12 @@
         <option value="Tech_Support">Technical Support</option>
         <option value="Other">Other</option>
       </select><br>
-      <label for="Query">Query:</label><br>
+      <label for="Query">Query:(300 characters max)</label><br>
       <textarea id="Query" name="Query" rows="4" cols="50">
       </textarea>
+      <div id="charCounter">0 / 300</div>
 
-      <input type="submit" value="Submit"><br>
+      <input id="submitBtn" type="submit" value="Submit"><br>
     </form>
 
   </main>
